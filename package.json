@@ -1,0 +1,19 @@
+{
+  "name": "vue-boilerplate",
+  "version": "1.0.0",
+  "description": "A boilerplate project with vue, webpack, bootstrap-vue, and some other common libraries",
+  "main": "index.js",
+  "scripts": {
+    "local": "webpack --config build/webpack.base.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "NoahLE",
+  "license": "MIT",
+  "dependencies": {
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
+}
