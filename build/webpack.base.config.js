@@ -7,8 +7,17 @@ module.exports = {
   mode: "development",
   entry: "./src/index",
   output: {
-    filename: "bundle.js",
+    filename: "[name].[hash].bundle.js",
+    chunkFilename: "[name].[hash].bundle.js",
     path: path.resolve(__dirname, "../dist"),
+  },
+  target: "web",
+  optimization: {
+    moduleIds: "hashed",
+    runtimeChunk: "single",
+    splitChunks: {
+      chunks: "all",
+    },
   },
   module: {
     rules: [
@@ -36,6 +45,7 @@ module.exports = {
     },
     extensions: [".vue", ".js", ".json", ".css"],
     modules: ["node_modules", path.resolve(__dirname, "src")],
+    symlinks: false,
   },
   performance: {
     hints: false,
