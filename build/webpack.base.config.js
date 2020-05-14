@@ -26,12 +26,17 @@ module.exports = {
         loader: "vue-loader",
       },
       {
-        test: /\.m?js$/,
-        loader: "babel-loader",
-        exclude: /(node_modules|bower_components)/,
-        options: {
-          presets: ["@babel/preset-env"],
-        },
+        test: /\.jsx?$/,
+        // include: [ path.resolve(__dirname, "src") ],
+        exclude: /node_modules/,
+        loader: [
+          {
+            loader: "babel-loader",
+            options: {
+              presets: ["@babel/preset-env"],
+            },
+          },
+        ],
       },
       {
         test: /\.css$/,
