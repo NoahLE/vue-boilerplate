@@ -34,7 +34,7 @@ module.exports = {
     alias: {
       vue$: "vue/dist/vue.esm.js",
     },
-    extensions: [".js", ".json", ".css"],
+    extensions: [".vue", ".js", ".json", ".css"],
     modules: ["node_modules", path.resolve(__dirname, "src")],
   },
   performance: {

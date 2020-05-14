@@ -1,3 +1,3 @@
 <template>
-  <p>Hello</p>
+  <p>Hello, I am a component.</p>
 </template>

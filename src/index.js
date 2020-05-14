@@ -4,10 +4,10 @@ import "regenerator-runtime/runtime";
 import Vue from "vue";
 import VueRouter from "vue-router";
 
-// import Component from "./Component";
+import Component from "./Component";
 
 // Vue Router
-const routes = [{ path: "/", component: { template: "<div>hi</div>" } }];
+const routes = [{ path: "/", component: Component }];
 const router = new VueRouter({ routes });
 Vue.use(VueRouter);
 
